@@ -22,15 +22,21 @@ function pal (word) {
         console.log(secondHalf[b]);
     }
     console.log(secondHalf);
-    if (firstHalf == secondHalf) {
-        return "La parola è palindroma"
-    } else {
-        return "La parola non è palindroma"
+    var c = 0;
+    while (c < half) {
+        if (firstHalf[c] == secondHalf[c]) {
+            c++
+        } else {
+            return "La parola non è palindroma"
+        }
     }
-    
+    if (c == half) {
+        return "la parola è palindroma"
+    } else {
+        return "La parola non è palindroma"  
+    }
 
 }
-
 
 var risultato = pal(parola);
 console.log(risultato);
