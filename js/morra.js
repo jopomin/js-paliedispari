@@ -1,35 +1,20 @@
-//Chiedo all'utente di scegliere tra "PARI" o "DISPARI", finché sceglie correttamente
+//Chiedo all'utente di scegliere tra "PARI" o "DISPARI", finché non sceglie correttamente. Traduco in Booleano la scelta effettuata.
 do {
     var evenOdd = prompt("Pari o dispari?").toUpperCase();
     console.log(evenOdd);
     if (evenOdd == "PARI") {
-        var result = true;
-        console.log(result);
+        var scelta = true;
+        console.log(scelta);
     } else if (evenOdd == "DISPARI") {
-        var result = false;
-        console.log(result);
+        var scelta = false;
+        console.log(scelta);
     } else {
         var result = "errore"
-        console.log(result);
+        console.log(scelta);
     }
 
-} while (result == "errore")
+} while (scelta == "errore")
 
-//Definisco una funzione che mi traduca in Booleano la scelta effettuata, che mi porti tutto in maiuscolo per evitare errori dovuti alla modalità di inserimento e che mi dia errore se inserisco valori diversi da "PARI" o "DISPARI"
-function evenChoice(word) {
-    var wordUp = word.toUpperCase();
-    console.log(wordUp);
-    if (wordUp == "PARI") {;
-        return true;
-    } else {
-        return false;
-    } 
-
-}
-
-//riporto il risultato della funzione in una variabile
-var scelta = evenChoice(evenOdd);
-console.log(scelta);
 
 //chiedo all'utente di inserire un numero da 1 a 5, finché non lo inserisce correttamente
 do {
