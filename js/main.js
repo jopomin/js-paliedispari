@@ -1,5 +1,8 @@
 //inserire una parola
-var parola = prompt("Inserisci una parola lunga almeno tre lettere");
+do {
+    var parola = prompt("Inserisci una parola lunga almeno tre lettere");
+    console.log(parola)
+} while (parola.length < 3)
 
 function pal (word) {
     console.log(word);

@@ -73,7 +73,7 @@ evenOdd = prompt("Pari o dispari?");
 console.log(evenOdd); */
 
 
-do {
+/* do {
     var evenOdd = prompt("Pari o dispari?").toUpperCase();
     console.log(evenOdd);
     if (evenOdd == "PARI") {
@@ -87,4 +87,8 @@ do {
         console.log(result);
     }
 
-} while (result == "errore")
+} while (result == "errore") */
+do {
+    var parola = prompt("Inserisci una parola lunga almeno tre lettere");
+    console.log(parola)
+} while (parola.length < 3)
