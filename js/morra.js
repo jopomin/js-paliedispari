@@ -1,6 +1,19 @@
-//Inserisco la scelta "PARI" o "DISPARI"
-evenOdd = prompt("Pari o dispari?");
-console.log(evenOdd);
+//Chiedo all'utente di scegliere tra "PARI" o "DISPARI", finché sceglie correttamente
+do {
+    var evenOdd = prompt("Pari o dispari?").toUpperCase();
+    console.log(evenOdd);
+    if (evenOdd == "PARI") {
+        var result = true;
+        console.log(result);
+    } else if (evenOdd == "DISPARI") {
+        var result = false;
+        console.log(result);
+    } else {
+        var result = "errore"
+        console.log(result);
+    }
+
+} while (result == "errore")
 
 //Definisco una funzione che mi traduca in Booleano la scelta effettuata, che mi porti tutto in maiuscolo per evitare errori dovuti alla modalità di inserimento e che mi dia errore se inserisco valori diversi da "PARI" o "DISPARI"
 function evenChoice(word) {
@@ -8,12 +21,9 @@ function evenChoice(word) {
     console.log(wordUp);
     if (wordUp == "PARI") {;
         return true;
-    } else if (wordUp == "DISPARI") {
-        return false;
     } else {
-        return "Errore: scegliere solo tra PARI o DISPARI"
-        alert('Errore: scegliere solo tra PARI o DISPARI');
-    }
+        return false;
+    } 
 
 }
 
@@ -21,9 +31,19 @@ function evenChoice(word) {
 var scelta = evenChoice(evenOdd);
 console.log(scelta);
 
-//chiedo all'utente di inserire un numero da 1 a 5
-playerNumber = parseInt(prompt("Inserisci un numero con valore da 1 a 5"));
-console.log(playerNumber);
+//chiedo all'utente di inserire un numero da 1 a 5, finché non lo inserisce correttamente
+do {
+    numero = parseInt(prompt("Inserisci un numero con valore da 1 a 5"));
+    if ((numero >= 1) && (numero <= 5)) {
+        console.log(numero);
+        var playerNumber = numero;
+    } else {
+        console.log(numero)
+        var playerNumber = "errore"
+        console.log(playerNumber);
+    }
+
+} while (playerNumber == "errore")
 
 //genero un numero da 1 a 5 per il computer
 cpuNumber = Math.floor(Math.random()*5+1);
