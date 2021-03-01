@@ -1,12 +1,10 @@
 //inserire una parola
 do {
-    var parola = prompt("Inserisci una parola lunga almeno tre lettere");
+    var parola = prompt("Inserisci una parola lunga almeno tre lettere").toUpperCase();
     console.log(parola)
 } while (parola.length < 3)
 
-function pal (word) {
-    console.log(word);
-    var stringa = word.toUpperCase();
+function pal (stringa) {
     console.log(stringa);
     var stringArray = Array.from(stringa);
     console.log(stringArray);
@@ -43,3 +41,4 @@ function pal (word) {
 
 var risultato = pal(parola);
 console.log(risultato);
+alert(risultato);

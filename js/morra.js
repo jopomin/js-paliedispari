@@ -56,8 +56,10 @@ console.log(risultato);
 //confronto il risultato delle due funzioni, quindi della scelta dell'utente e del risultato del confronto tra i numeri e decreto se l'utente ha vinto o perso
 if (scelta == risultato) {
     console.log("Hai vinto!");
+    alert("Hai vinto!");
 } else {
     console.log("Hai perso!");
+    alert("Hai perso!");
 }
 
 
