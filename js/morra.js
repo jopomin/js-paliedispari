@@ -9,12 +9,11 @@ do {
         var scelta = false;
         console.log(scelta);
     } else {
-        var result = "errore"
+        var scelta = "errore"
         console.log(scelta);
     }
 
 } while (scelta == "errore")
-
 
 //chiedo all'utente di inserire un numero da 1 a 5, finché non lo inserisce correttamente
 do {
